@@ -13,7 +13,7 @@ public class Book
         this.NoOfPages=NoOfPages;
         this.category=category;
       }
-    public void getBookDetails() // when we press search button and want to print the books details
+    public void getBookDetails() // category >>> book
     {
         System.out.println("The Book Name:"+this.name);
         System.out.println("The Book ID:"+this.ID);
