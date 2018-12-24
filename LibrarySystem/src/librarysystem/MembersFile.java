@@ -69,12 +69,19 @@ void CheckNoOfBorrowedCopies(String MemberName, int MemberID, String BookName)
               {
                  
                    System.out.println("==============");
-                  return;
+                   return;
+                  
               }
             }
-        }
-       System.out.println("Member Doesn't exists"); 
+            else
+            {
+                 System.out.println("Member Doesn't exists"); 
        System.out.println("================");
+            }
+        }
+    
+      // System.out.println("Member Doesn't exists"); 
+      // System.out.println("================");
 }
 
 void ShowHistory(Member m)
@@ -104,16 +111,17 @@ void ShowHistory(Member m)
            {   
                x.BorrowedBooks.remove(BookName);
                x.ReturnedBooks.add(BookName);
-             int n=x.getNoOfBorrowedBookCopies();
-             x.setNoOfBorrowedBookCopies(--n);
-             ba.UpdateBookCopy(BookName); //update NoOfCopies for that book
-             System.out.println("Copy is successfully returned");
-              System.out.println("==============");
-              return;
+               int n=x.getNoOfBorrowedBookCopies();
+               x.setNoOfBorrowedBookCopies(--n);
+               ba.UpdateBookCopy(BookName); //update NoOfCopies for that book
+               System.out.println("Copy is successfully returned");
+               System.out.println("==============");
+                return;
                
           }
         }
-        
+       System.out.println("Wrong Member's Name Or ID"); 
+        System.out.println("==============");
     }
     
 }

@@ -19,6 +19,8 @@ public class BookArchieve {
             }
         
         }
+        System.out.println("Book is added successfully");
+        System.out.println("==============");
         book.add(e);// method that goes for the archieve (DataBase) // msh lazzm ttktb mel akher
     }
 
